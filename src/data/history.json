@@ -1,0 +1,33 @@
+[
+  {
+    "role": "Web Development Intern",
+    "organisation": "Kean University",
+    "startDate": "Mar, 2024",
+    "endDate": "May, 2024",
+    "experiences": ["Collaborated closely with a professor to gather website requirements and design preferences, ensuring alignment with stakeholder expectations", 
+    "Implemented agile development methodologies to iteratively create and refine the website, incorporating feedback from weekly progress meetings"],
+    "imageSrc": "history/KU.png"
+  },
+  {
+    "role": "Database Intern",
+    "organisation": "Kean University",
+    "startDate": "Feb, 2023",
+    "endDate": "May, 2023",
+    "experiences": [
+      "Led a team of 5 to design the foundation to a robust database system to streamline information sharing among university departments, enhancing employer partnerships",
+      "Utilized Django, a Python web framework, to develop a user-friendly application"
+    ],
+    "imageSrc": "history/KU.png"
+  },
+  {
+    "role": "Data Processing Intern",
+    "organisation": "Kean University",
+    "startDate": "Oct, 2022",
+    "endDate": "Dec, 2022",
+    "experiences": [
+      "Efficiently segmented and processed 12 Google Street View images utilizing open-source code sourced from GitHub, resulting in improved data accessibility and usability",
+      "Played a pivotal role in knowledge transfer by providing guidance to a partner and supervisor, facilitating smooth code execution through comprehensive documentation of software prerequisites"
+    ],
+    "imageSrc": "history/KU.png"
+  }
+]
