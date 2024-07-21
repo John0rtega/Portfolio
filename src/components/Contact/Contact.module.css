@@ -46,6 +46,7 @@
   letter-spacing: 1.5px;
 }
 
+/* Tablet view */
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column;
@@ -56,9 +57,50 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+
+  .text h2 {
+    font-size: 60px;
+  }
+
+  .text p {
+    font-size: 30px;
   }
 
   .links {
     align-items: center;
+  }
+
+  .link a {
+    font-size: 25px;
+  }
+}
+
+/* Mobile view */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 20px 5%;
+    gap: 15px;
+  }
+
+  .text h2 {
+    font-size: 40px;
+  }
+
+  .text p {
+    font-size: 20px;
+  }
+
+  .link a {
+    font-size: 20px;
+  }
+
+  .links {
+    gap: 15px;
+  }
+
+  .link {
+    gap: 15px;
   }
 }

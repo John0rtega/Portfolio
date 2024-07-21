@@ -1,5 +1,10 @@
 @import "../../vars.css";
 
+@font-face {
+  font-family: title;
+  src: url('./fonts/Motterdam-K74zp.ttf');
+}
+
 .navbar {
   position: relative;
   display: flex;
@@ -15,8 +20,8 @@
   font-weight: 600;
   text-decoration: none;
   color: var(--color-text);
+  font-family: title;
 }
-
 
 .menuBtn {
   display: none;
@@ -38,16 +43,28 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .menuItems a {
+    font-size: 22px;
+  }
+}
+
 @media screen and (max-width: 830px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+    margin: 0 5%;
   }
 
   .menu {
     position: absolute;
+    top: 80px; /* Adjust based on the height of your navbar */
     right: 0;
-    margin-right: 10%;
+    margin-right: 0;
     flex-direction: column;
     align-items: flex-end;
     gap: 11px;
@@ -73,10 +90,22 @@
     );
     padding: 24px 33px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    width: 100%; /* Ensure the menu takes full width on small screens */
+    top: 100%; /* Adjust to make sure the menu appears below the navbar */
   }
 
   .menuOpen {
     display: flex;
     z-index: 1;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .menuItems a {
+    font-size: 20px;
   }
 }

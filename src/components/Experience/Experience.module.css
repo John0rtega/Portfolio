@@ -17,16 +17,18 @@
 
 .content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   margin-top: 14px;
+  gap: 40px;
 }
 
 .skills {
-  width: 45%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 37px;
+  justify-content: center;
 }
 
 .skill {
@@ -34,6 +36,11 @@
   flex-direction: column;
   align-items: center;
   gap: 11px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill:hover {
+  transform: scale(1.1);
 }
 
 .skillImageContainer {
@@ -44,6 +51,20 @@
   justify-content: center;
   width: 120px;
   height: 120px;
+  transition: transform 0.6s;
+}
+
+.skillImageContainer:hover {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
 
 .skillImageContainer img {
@@ -57,7 +78,7 @@
 }
 
 .history {
-  width: 45%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -75,9 +96,8 @@
 }
 
 .historyItem img {
-  width: 50px;
   mix-blend-mode: color-burn;
-  width: 20%;
+  width: 50px;
 }
 
 .historyItemDetails {
@@ -102,9 +122,26 @@
   margin-left: 17px;
 }
 
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .skill p, .historyItemDetails h3 {
+    font-size: 25px;
+  }
+
+  .historyItemDetails p {
+    font-size: 18px;
+  }
+
+  .historyItemDetails ul {
+    font-size: 22px;
+  }
+}
+
 @media screen and (max-width: 830px) {
   .content {
-    flex-direction: column;
     align-items: center;
     gap: 34px;
   }
@@ -117,6 +154,75 @@
 
   .history {
     width: 100%;
-    gap: 9px;
+    gap: 20px;
+  }
+
+  .historyItem {
+    padding: 16px;
+  }
+
+  .skillImageContainer {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skillImageContainer img {
+    width: 60px;
+  }
+
+  .skill p, .historyItemDetails h3 {
+    font-size: 22px;
+  }
+
+  .historyItemDetails p {
+    font-size: 16px;
+  }
+
+  .historyItemDetails ul {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin: 20px 5%;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .skills {
+    gap: 20px;
+  }
+
+  .historyItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .historyItem img {
+    width: 40px;
+  }
+
+  .skillImageContainer {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skillImageContainer img {
+    width: 50px;
+  }
+
+  .skill p, .historyItemDetails h3 {
+    font-size: 20px;
+  }
+
+  .historyItemDetails p {
+    font-size: 14px;
+  }
+
+  .historyItemDetails ul {
+    font-size: 18px;
   }
 }

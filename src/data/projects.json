@@ -1,17 +1,17 @@
 [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Kean Talk",
+    "imageSrc": "projects/project1.png",
+    "description": "A social media/marketplace platform for the Kean community. A place where students, falculty, and alumnis can comminicate with each other.",
+    "skills": ["HTML", "CSS", "JS"],
+    "demo": "https://john0rtega.github.io/KeanTalk/",
+    "source": "https://github.com/John0rtega/KeanTalk/tree/main"
   },
   {
-    "title": "Project B",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
+    "title": "Portfolio",
+    "imageSrc": "projects/project2.png",
+    "description": "My portfolio, designed to demonstrate who I am and my career journey.",
+    "skills": ["ReactJS", "CSS", "Vercel"],
     "demo": "https://www.example.com",
     "source": "https://www.github.com"
   },
